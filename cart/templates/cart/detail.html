@@ -21,33 +21,33 @@
     </thead>
     <tbody>
         {% for item in cart %}
-        {% with product=item.product %}
-        <tr>
-            <td>
-                <a href="{{ product.get_absolute_url }}">
-                    <img
-                        src="{% if product.image %}{{ product.image.url }}{% else %}{% static 'img/no_image.png' %}{% endif %}" />
-                </a>
-            </td>
-            <td>{{ product.name }}</td>
-            <td>
-                <form action="{% url 'cart:cart_add' product.id %}" method="post">
-                    {{ item.update_quantity_form.quantity }}
-                    {{ item.update_quantity_form.override }}
-                    <input type="submit" value="{% trans 'Update' %}" />
-                    {% csrf_token %}
-                </form>
-            </td>
-            <td>
-                <form action="{% url 'cart:cart_remove' product.id %}" method="post">
-                    <input type="submit" value="{% trans 'Remove' %}" />
-                    {% csrf_token %}
-                </form>
-            </td>
-            <td class="num">${{ item.price }}</td>
-            <td class="num">${{ item.total_price }}</td>
-        </tr>
-        {% endwith %}
+            {% with product=item.product %}
+            <tr>
+                <td>
+                    <a href="{{ product.get_absolute_url }}">
+                        <img
+                            src="{% if product.image %}{{ product.image.url }}{% else %}{% static 'img/no_image.png' %}{% endif %}" />
+                    </a>
+                </td>
+                <td>{{ product.name }}</td>
+                <td>
+                    <form action="{% url 'cart:cart_add' product.id %}" method="post">
+                        {{ item.update_quantity_form.quantity }}
+                        {{ item.update_quantity_form.override }}
+                        <input type="submit" value="{% trans 'Update' %}" />
+                        {% csrf_token %}
+                    </form>
+                </td>
+                <td>
+                    <form action="{% url 'cart:cart_remove' product.id %}" method="post">
+                        <input type="submit" value="{% trans 'Remove' %}" />
+                        {% csrf_token %}
+                    </form>
+                </td>
+                <td class="num">${{ item.price }}</td>
+                <td class="num">${{ item.total_price }}</td>
+            </tr>
+            {% endwith %}
         {% endfor %}
         {% if cart.coupon %}
         <tr class="subtotal">

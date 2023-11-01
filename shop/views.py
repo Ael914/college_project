@@ -1,8 +1,7 @@
+from cart.forms import CartAddProductForm
 from django.http import HttpRequest
 from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
-
-from cart.forms import CartAddProductForm
 from orders.models import Order
 
 from .models import Category, Product
