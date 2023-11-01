@@ -1,0 +1,17 @@
+{% extends "shop/base.html" %}
+{% load i18n %}
+{% load static %}
+
+{% block title %}Your orders{% endblock %}
+
+{% block content %}
+    <div>
+        <ul class="order_list">
+            {% for order in orders %}
+                <li>
+                    <a href="{% url 'shop:order_redirect' order.id %}">{% trans "Order" %}  №{{ order.id }}.</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}
