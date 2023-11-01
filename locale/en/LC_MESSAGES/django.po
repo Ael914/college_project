@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-01 16:24+0700\n"
+"POT-Creation-Date: 2023-11-01 20:23+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -162,8 +162,8 @@ msgstr ""
 #, python-format
 msgid ""
 "\n"
-"                \"%(code)s\" (%(discount)s%% off)\n"
-"                "
+"                    \"%(code)s\" (%(discount)s%% off)\n"
+"                    "
 msgstr ""
 
 #: .\payment\templates\payment\process.html:62
@@ -198,12 +198,12 @@ msgstr ""
 #, python-format
 msgid ""
 "\n"
-"                %(items)s item, $%(total)s\n"
-"                "
+"                        %(items)s item, $%(total)s\n"
+"                        "
 msgid_plural ""
 "\n"
-"                %(items)s items, $%(total)s\n"
-"                "
+"                        %(items)s items, $%(total)s\n"
+"                        "
 msgstr[0] ""
 msgstr[1] ""
 
@@ -228,7 +228,7 @@ msgid "Add to cart"
 msgstr ""
 
 #: .\shop\templates\shop\product\list.html:5
-#: .\shop\templates\shop\product\list.html:24
+#: .\shop\templates\shop\product\list.html:23
 msgid "Products"
 msgstr ""
 
@@ -240,6 +240,6 @@ msgstr ""
 msgid "All"
 msgstr ""
 
-#: .\shop\urls.py:7
+#: .\shop\urls.py:8
 msgid "list/"
 msgstr ""

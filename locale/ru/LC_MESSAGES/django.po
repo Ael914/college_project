@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-01 16:24+0700\n"
-"PO-Revision-Date: 2023-11-01 17:38+0000\n"
+"POT-Creation-Date: 2023-11-01 20:23+0700\n"
+"PO-Revision-Date: 2023-11-01 20:24+0000\n"
 "Last-Translator:   <sold201403@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -163,10 +163,14 @@ msgstr "Сумма заказа"
 
 #: .\payment\templates\payment\process.html:42
 #, python-format
+#| msgid ""
+#| "\n"
+#| "                \"%(code)s\" (%(discount)s%% off)\n"
+#| "                "
 msgid ""
 "\n"
-"                \"%(code)s\" (%(discount)s%% off)\n"
-"                "
+"                    \"%(code)s\" (%(discount)s%% off)\n"
+"                    "
 msgstr ""
 "\n"
 "\"%(code)s\" (Скидка %(discount)s%%)"
@@ -201,14 +205,22 @@ msgstr "Ваша корзина"
 
 #: .\shop\templates\shop\base.html:37
 #, python-format
+#| msgid ""
+#| "\n"
+#| "                %(items)s item, $%(total)s\n"
+#| "                "
+#| msgid_plural ""
+#| "\n"
+#| "                %(items)s items, $%(total)s\n"
+#| "                "
 msgid ""
 "\n"
-"                %(items)s item, $%(total)s\n"
-"                "
+"                        %(items)s item, $%(total)s\n"
+"                        "
 msgid_plural ""
 "\n"
-"                %(items)s items, $%(total)s\n"
-"                "
+"                        %(items)s items, $%(total)s\n"
+"                        "
 msgstr[0] ""
 "\n"
 "%(items)s товар, $%(total)s"
@@ -237,7 +249,7 @@ msgid "Add to cart"
 msgstr "Добавить в корзину"
 
 #: .\shop\templates\shop\product\list.html:5
-#: .\shop\templates\shop\product\list.html:24
+#: .\shop\templates\shop\product\list.html:23
 msgid "Products"
 msgstr "Товары"
 
@@ -249,6 +261,6 @@ msgstr "Категории"
 msgid "All"
 msgstr "Все"
 
-#: .\shop\urls.py:7
+#: .\shop\urls.py:8
 msgid "list/"
 msgstr "spisok/"
