@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-01 20:23+0700\n"
+"POT-Creation-Date: 2023-11-04 22:20+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -212,6 +212,8 @@ msgid "Your cart is empty."
 msgstr ""
 
 #: .\shop\templates\shop\base.html:50
+#: .\shop\templates\shop\list\order_list.html:5
+#: .\shop\templates\shop\list\order_list.html:8
 msgid "Your orders"
 msgstr ""
 
@@ -219,7 +221,7 @@ msgstr ""
 msgid "You have no orders yet."
 msgstr ""
 
-#: .\shop\templates\shop\list\order_list.html:12
+#: .\shop\templates\shop\list\order_list.html:13
 msgid "Order"
 msgstr ""
 

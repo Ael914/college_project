@@ -2,9 +2,10 @@
 {% load i18n %}
 {% load static %}
 
-{% block title %}Your orders{% endblock %}
+{% block title %}{% trans "Your orders" %}{% endblock %}
 
 {% block content %}
+    <h1>{% trans "Your orders" %}</h1>
     <div>
         <ul class="order_list">
             {% for order in orders %}

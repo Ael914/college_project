@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-01 20:23+0700\n"
+"POT-Creation-Date: 2023-11-04 22:20+0700\n"
 "PO-Revision-Date: 2023-11-01 20:24+0000\n"
 "Last-Translator:   <sold201403@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -164,10 +164,6 @@ msgstr "Zusammenfassung der Bestellung"
 
 #: .\payment\templates\payment\process.html:42
 #, python-format
-#| msgid ""
-#| "\n"
-#| "                \"%(code)s\" (%(discount)s%% off)\n"
-#| "                "
 msgid ""
 "\n"
 "                    \"%(code)s\" (%(discount)s%% off)\n"
@@ -206,14 +202,6 @@ msgstr "Ihr Warenkorb"
 
 #: .\shop\templates\shop\base.html:37
 #, python-format
-#| msgid ""
-#| "\n"
-#| "                %(items)s item, $%(total)s\n"
-#| "                "
-#| msgid_plural ""
-#| "\n"
-#| "                %(items)s items, $%(total)s\n"
-#| "                "
 msgid ""
 "\n"
 "                        %(items)s item, $%(total)s\n"
@@ -234,6 +222,8 @@ msgid "Your cart is empty."
 msgstr "Ihr Warenkorb ist leer."
 
 #: .\shop\templates\shop\base.html:50
+#: .\shop\templates\shop\list\order_list.html:5
+#: .\shop\templates\shop\list\order_list.html:8
 msgid "Your orders"
 msgstr "Ihre Bestellungen"
 
@@ -241,7 +231,7 @@ msgstr "Ihre Bestellungen"
 msgid "You have no orders yet."
 msgstr "Sie haben noch keine Bestellungen."
 
-#: .\shop\templates\shop\list\order_list.html:12
+#: .\shop\templates\shop\list\order_list.html:13
 msgid "Order"
 msgstr "Bestellung"
 

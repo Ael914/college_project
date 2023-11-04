@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-01 20:23+0700\n"
+"POT-Creation-Date: 2023-11-04 22:20+0700\n"
 "PO-Revision-Date: 2023-11-01 20:25+0000\n"
 "Last-Translator:   <sold201403@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,6 @@ msgstr ""
 "X-Translated-Using: django-rosetta 0.9.9\n"
 
 #: .\orders\forms.py:9
-#| msgid "postal code"
 msgid "Postal code"
 msgstr "Postleitzahl"
 
@@ -59,10 +58,6 @@ msgstr "Ihre Bestellung"
 
 #: .\orders\templates\orders\order\create.html:21
 #, python-format
-#| msgid ""
-#| "\n"
-#| "                    \"%(code)s\" (%(discount)s%% off)\n"
-#| "                    "
 msgid ""
 "\n"
 "                \"%(code)s\" (%(discount)s%% off)\n"
@@ -118,10 +113,6 @@ msgstr "Zwischensumme"
 
 #: .\orders\templates\orders\order\pdf.html:47
 #, python-format
-#| msgid ""
-#| "\n"
-#| "                    \"%(code)s\" (%(discount)s%% off)\n"
-#| "                    "
 msgid ""
 "\n"
 "                        \"%(code)s\" (%(discount)s%% off)\n"
