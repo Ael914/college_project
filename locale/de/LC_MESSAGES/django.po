@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-06 19:03+0700\n"
+"POT-Creation-Date: 2023-11-06 22:35+0700\n"
 "PO-Revision-Date: 2023-11-01 20:24+0000\n"
 "Last-Translator:   <sold201403@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -102,15 +102,15 @@ msgstr "Kasse"
 msgid "Coupon"
 msgstr "Gutschein"
 
-#: .\myshop\settings.py:119
+#: .\myshop\settings.py:118
 msgid "English"
 msgstr "Englisch"
 
-#: .\myshop\settings.py:120
+#: .\myshop\settings.py:119
 msgid "Russian"
 msgstr "Russisch"
 
-#: .\myshop\settings.py:121
+#: .\myshop\settings.py:120
 msgid "German"
 msgstr "Deutsch"
 
@@ -221,38 +221,9 @@ msgstr[1] ""
 msgid "Your cart is empty."
 msgstr "Ihr Warenkorb ist leer."
 
-#: .\shop\templates\shop\base.html:51
+#: .\shop\templates\shop\base.html:49
 msgid "Your orders"
 msgstr "Ihre Bestellungen"
-
-#: .\shop\templates\shop\base.html:53
-#, fuzzy, python-format
-#| msgid ""
-#| "\n"
-#| "                        %(items)s item, $%(total)s\n"
-#| "                        "
-#| msgid_plural ""
-#| "\n"
-#| "                        %(items)s items, $%(total)s\n"
-#| "                        "
-msgid ""
-"\n"
-"                        %(orders)s order\n"
-"                        "
-msgid_plural ""
-"\n"
-"                        %(orders)s orders\n"
-"                        "
-msgstr[0] ""
-"\n"
-"%(items)s Artikel, $%(total)s"
-msgstr[1] ""
-"\n"
-"%(items)s Artikel, $%(total)s"
-
-#: .\shop\templates\shop\base.html:60
-msgid "You have no orders yet."
-msgstr "Sie haben noch keine Bestellungen."
 
 #: .\shop\templates\shop\product\detail.html:22
 msgid "Add to cart"
@@ -270,6 +241,33 @@ msgstr "Kategorien"
 #: .\shop\templates\shop\product\list.html:13
 msgid "All"
 msgstr "Alle"
+
+#, fuzzy, python-format
+#~| msgid ""
+#~| "\n"
+#~| "                        %(items)s item, $%(total)s\n"
+#~| "                        "
+#~| msgid_plural ""
+#~| "\n"
+#~| "                        %(items)s items, $%(total)s\n"
+#~| "                        "
+#~ msgid ""
+#~ "\n"
+#~ "                        %(orders)s order\n"
+#~ "                        "
+#~ msgid_plural ""
+#~ "\n"
+#~ "                        %(orders)s orders\n"
+#~ "                        "
+#~ msgstr[0] ""
+#~ "\n"
+#~ "%(items)s Artikel, $%(total)s"
+#~ msgstr[1] ""
+#~ "\n"
+#~ "%(items)s Artikel, $%(total)s"
+
+#~ msgid "You have no orders yet."
+#~ msgstr "Sie haben noch keine Bestellungen."
 
 #~ msgid "Order"
 #~ msgstr "Bestellung"

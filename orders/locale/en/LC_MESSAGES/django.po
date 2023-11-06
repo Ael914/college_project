@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-06 19:03+0700\n"
+"POT-Creation-Date: 2023-11-06 22:35+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,6 +53,10 @@ msgstr ""
 
 #: .\orders\templates\orders\list\order_list.html:13
 msgid "Order"
+msgstr ""
+
+#: .\orders\templates\orders\list\order_list.html:16
+msgid "You have no orders yet."
 msgstr ""
 
 #: .\orders\templates\orders\order\create.html:5
