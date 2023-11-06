@@ -11,7 +11,7 @@ from orders.models import Order
 @shared_task
 def payment_completed(order_id):
     order = Order.objects.get(id=order_id)
-    subject = f"My Shop - Invoice no. {order.id}"
+    subject = f"SuperMegaShop - Invoice no. {order.id}"
     message = "Please, find attached the invoice for your recent purchase."
     email = EmailMessage(
         subject,
