@@ -1,6 +1,6 @@
 from django.http import HttpRequest
+from .order_list import OrderList
 
 
 def have_orders(request: HttpRequest):
-    orders = request.session.get("orders", [])
-    return {"have_orders": len(orders) > 0}
+    return {"order_list": OrderList(request)}

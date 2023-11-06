@@ -6,6 +6,7 @@ from django.http import HttpRequest, HttpResponse
 from django.shortcuts import get_object_or_404, redirect, render
 from django.template.loader import render_to_string
 from django.urls import reverse
+from order_list import OrderList
 
 from .forms import OrderCreateForm
 from .models import Order, OrderItem
@@ -37,12 +38,8 @@ def order_create(request: HttpRequest):
             # задать заказ в сеансе
             request.session["order_id"] = order.id
             # сохранить в список заказов
-            if "orders" in request.session:
-                request.session["orders"] += [order.id]
-            else:
-                request.session["orders"] = [
-                    order.id,
-                ]
+            order_list = OrderList(request)
+            order_list.add(order)
             # перенаправить к платежу
             return redirect(reverse("payment:process"))
     else:

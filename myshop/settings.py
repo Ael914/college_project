@@ -162,6 +162,7 @@ MEDIA_ROOT = BASE_DIR / "media"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 CART_SESSION_ID = "cart"
+ORDER_LIST_SESSION_ID = "order_list"
 # Не стану оставлять ключи и пароли от своих аккаунтов в открытом репозитории
 EMAIL_HOST = "smtp.gmail.com"
 EMAIL_HOST_USER = "djangoacc0@gmail.com"

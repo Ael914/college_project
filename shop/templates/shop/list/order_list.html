@@ -8,7 +8,7 @@
     <h1>{% trans "Your orders" %}</h1>
     <div>
         <ul class="order_list">
-            {% for order in orders %}
+            {% for order in order_list %}
                 <li>
                     <a href="{% url 'shop:order_redirect' order.id %}">{% trans "Order" %}  №{{ order.id }}.</a>
                 </li>

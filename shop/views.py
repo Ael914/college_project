@@ -57,15 +57,8 @@ def product_detail(request: HttpRequest, id, slug):
 
 
 def order_list(request: HttpRequest):
-    request_orders = request.session.get("orders", [])
-    orders = []
-    for id in request_orders[::-1]:
-        order = get_object_or_404(Order, id=id)
-        if not order.paid:
-            orders += [
-                order,
-            ]
-    return render(request, "shop/list/order_list.html", {"orders": orders})
+    order_list = request.session.get("order_list", None)
+    return render(request, "shop/list/order_list.html", {"order_list": order_list})
 
 
 def order_redirect(request: HttpRequest, order_id):

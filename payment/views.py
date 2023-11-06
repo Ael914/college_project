@@ -52,7 +52,8 @@ def payment_process(request: HttpRequest):
 
 
 def payment_completed(request: HttpRequest):
-    request.session["orders"].remove(request.session["order_id"])
+    order = Order.objects.get(id=request.session["order_id"])
+    request.session["order_list"].remove(order)
     return render(request, "payment/completed.html")
 
 
