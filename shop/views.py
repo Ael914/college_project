@@ -57,8 +57,9 @@ def product_detail(request: HttpRequest, id, slug):
 
 
 def order_list(request: HttpRequest):
+    request_orders = request.session.get("orders", [])
     orders = []
-    for id in request.session["orders"][::-1]:
+    for id in request_orders[::-1]:
         order = get_object_or_404(Order, id=id)
         if not order.paid:
             orders += [
