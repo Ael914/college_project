@@ -6,7 +6,7 @@ from django.http import HttpRequest, HttpResponse
 from django.shortcuts import get_object_or_404, redirect, render
 from django.template.loader import render_to_string
 from django.urls import reverse
-from order_list import OrderList
+from .order_list import OrderList
 
 from .forms import OrderCreateForm
 from .models import Order, OrderItem
@@ -64,3 +64,13 @@ def admin_order_pdf(request: HttpRequest, order_id):
         stylesheets=[weasyprint.CSS(settings.STATIC_ROOT / "css/pdf.css")],
     )
     return response
+
+
+def order_list(request: HttpRequest):
+    orders = OrderList(request)
+    return render(request, "orders/list/order_list.html", {"order_list": orders})
+
+
+def order_redirect(request: HttpRequest, order_id):
+    request.session["order_id"] = order_id
+    return redirect(reverse("payment:process"))

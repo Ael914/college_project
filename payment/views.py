@@ -5,6 +5,7 @@ from django.conf import settings
 from django.http import HttpRequest
 from django.shortcuts import get_object_or_404, redirect, render, reverse
 from orders.models import Order
+from orders.order_list import OrderList
 
 # Create your views here.
 stripe.api_key = settings.STRIPE_SECRET_KEY
@@ -52,8 +53,9 @@ def payment_process(request: HttpRequest):
 
 
 def payment_completed(request: HttpRequest):
-    order = Order.objects.get(id=request.session["order_id"])
-    request.session["order_list"].remove(order)
+    order_list = OrderList(request)
+    order = get_object_or_404(Order, id=request.session["order_id"])
+    order_list.remove(order)
     return render(request, "payment/completed.html")
 
 

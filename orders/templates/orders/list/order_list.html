@@ -10,8 +10,10 @@
         <ul class="order_list">
             {% for order in order_list %}
                 <li>
-                    <a href="{% url 'shop:order_redirect' order.id %}">{% trans "Order" %}  №{{ order.id }}.</a>
+                    <a href="{% url 'orders:order_redirect' order.id %}">{% trans "Order" %}  №{{ order.id }}.</a>
                 </li>
+            {% empty %}
+                {% trans "You have no orders yet." %}
             {% endfor %}
         </ul>
     </div>

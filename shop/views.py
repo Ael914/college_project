@@ -54,13 +54,3 @@ def product_detail(request: HttpRequest, id, slug):
             "recommended_products": recommended_products,
         },
     )
-
-
-def order_list(request: HttpRequest):
-    order_list = request.session.get("order_list", None)
-    return render(request, "shop/list/order_list.html", {"order_list": order_list})
-
-
-def order_redirect(request: HttpRequest, order_id):
-    request.session["order_id"] = order_id
-    return redirect(reverse("payment:process"))

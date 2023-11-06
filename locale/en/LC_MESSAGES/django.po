@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-04 22:20+0700\n"
+"POT-Creation-Date: 2023-11-06 19:03+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -211,18 +211,25 @@ msgstr[1] ""
 msgid "Your cart is empty."
 msgstr ""
 
-#: .\shop\templates\shop\base.html:50
-#: .\shop\templates\shop\list\order_list.html:5
-#: .\shop\templates\shop\list\order_list.html:8
+#: .\shop\templates\shop\base.html:51
 msgid "Your orders"
 msgstr ""
 
-#: .\shop\templates\shop\base.html:52
-msgid "You have no orders yet."
-msgstr ""
+#: .\shop\templates\shop\base.html:53
+#, python-format
+msgid ""
+"\n"
+"                        %(orders)s order\n"
+"                        "
+msgid_plural ""
+"\n"
+"                        %(orders)s orders\n"
+"                        "
+msgstr[0] ""
+msgstr[1] ""
 
-#: .\shop\templates\shop\list\order_list.html:13
-msgid "Order"
+#: .\shop\templates\shop\base.html:60
+msgid "You have no orders yet."
 msgstr ""
 
 #: .\shop\templates\shop\product\detail.html:22
@@ -240,8 +247,4 @@ msgstr ""
 
 #: .\shop\templates\shop\product\list.html:13
 msgid "All"
-msgstr ""
-
-#: .\shop\urls.py:8
-msgid "list/"
 msgstr ""

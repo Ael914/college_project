@@ -46,11 +46,7 @@
             {% endwith %}
         </div>
         <div class="orders">
-            {% if have_orders %}
-                <a href="{% url 'shop:order_list' %}">{% trans "Your orders" %}</a>
-            {% else %}
-                {% trans "You have no orders yet." %}
-            {% endif %}
+            <a href="{% url 'orders:order_list' %}">{% trans "Ваши заказы" %}</a>
         </div>
     </div>
     <div id="content">

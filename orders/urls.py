@@ -21,4 +21,6 @@ urlpatterns = [
         views.admin_order_pdf,
         name="admin_order_pdf",
     ),
+    path("list/<int:order_id>/", views.order_redirect, name="order_redirect"),
+    path("list/", views.order_list, name="order_list"),
 ]
