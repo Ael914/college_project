@@ -5,7 +5,7 @@ from .models import Order
 
 
 # Create your tests here.
-class OrderLabelsTestCase(TestCase):
+class OrderTestCase(TestCase):
     def setUp(self):
         kwargs = {
             "first_name": "John",
